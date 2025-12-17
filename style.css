@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #14001f;
+  }
+  
+  /* BACKGROUND VISUAL */
+  .bg-visual {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .bg-visual img {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    max-width: 160%;
+    opacity: 0.35;
+    animation: slowFloat 12s ease-in-out infinite;
+  }
+  
+  @keyframes slowFloat {
+    0%,100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -25px); }
+  }
+  
+  .bg-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to top, rgba(20,0,31,0.95), rgba(20,0,31,0.4) 40%, rgba(20,0,31,0.2)),
+      radial-gradient(circle at top, rgba(160,90,255,0.25), transparent 60%);
+  }
+  
+  /* HEADER */
+  .header {
+    text-align: center;
+    padding: 60px 20px 70px;
+  }
+  
+  .logo-frame {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(45deg, #ff4ecd, #7f5cff);
+  }
+  
+  .logo-frame img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .header h1 {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  
+  .header p {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+  
+  /* CONTENT */
+  .container {
+    max-width: 720px;
+    margin: auto;
+    padding: 0 16px;
+  }
+  
+  details {
+    background: rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+  }
+  
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #ffd166;
+  }
+  
+  details p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* CTA */
+  .order {
+    display: block;
+    margin: 30px auto 10px;
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+    padding: 14px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #9d4edd, #ff4ecd);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .wa {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.6;
+    padding: 20px;
+  }
+  
